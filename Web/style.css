@@ -1,0 +1,174 @@
+/* Section & settings */
+.fp-section {
+	text-align: center;
+}
+
+/* Gradient Background */
+.gradient {
+	background: linear-gradient(to right, #ff5f6d, #ffc371);
+	background-size: 200% auto;
+}
+.menu-gradient {
+	background: linear-gradient(to top, #ff5f6d, #ffc371);
+	background-size: 200% auto;
+}
+
+.animate-gradient {
+	animation: gradientAnimation 5s ease infinite;
+}
+* {
+	font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+	color: whitesmoke;
+	text-shadow: 2px 3px lightslategray;
+	font-style: italic;
+}
+@keyframes gradientAnimation {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.fp-slide {
+	font-size: 50px;
+	display: flex;
+	justify-content: center;
+	justify-self: center;
+	align-items: center;
+}
+
+.header {
+	position: absolute;
+	font-size: 3.75vh;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 1000;
+	color: white;
+	font-weight: bold;
+	text-shadow: 2px 2px 4px black;
+}
+
+/* Menu */
+#menu {
+	position: fixed;
+	top: 9vh;
+	right: 6vh;
+	width: 20vb;
+	z-index: 1000;
+	display: none;
+	padding: 1vb;
+	border-radius: 10%;
+}
+.menu-item {
+	display: flex !important;
+	justify-content: center;
+	justify-self: center;
+	align-items: center;
+	flex-direction: column;
+	margin-bottom: 10px;
+	text-decoration: none;
+}
+.menu-icon {
+	position: fixed;
+	top: 20px;
+	right: 50px;
+	z-index: 1001;
+	cursor: pointer;
+}
+.menu-icon:hover {
+	filter: opacity(50%);
+}
+.menu-icon img {
+	filter: invert(100%);
+	width: 30px;
+	height: 30px;
+}
+
+/* Skills */
+#my-skills {
+	display: flex;
+	justify-content: center;
+	justify-self: center;
+	align-items: center;
+	flex-direction: column;
+	margin-bottom: -9vh;
+}
+
+#name-change-container,
+#name-change-input,
+#name-change {
+	color: black;
+	text-shadow: none;
+}
+
+.fp-section {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.image-container {
+	margin-right: 20px;
+}
+
+.hobby-img {
+	margin-bottom: 10px;
+}
+
+.grid-item img {
+	height: 15%;
+	width: 15%;
+}
+
+/* ChatGPT abiga */
+.image-button {
+	display: block;
+	border-radius: 10px;
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+
+.image-set {
+	display: flex;
+	align-items: center;
+	padding: 5px;
+	background-color: #ffffff;
+}
+
+.image-set img {
+	flex-shrink: 0;
+	width: calc(20% - 10px);
+	margin-right: 20%;
+	border-radius: 5px;
+}
+
+a,
+.menu-item {
+	text-decoration-line: none;
+	color: #ffffff;
+}
+.menu-item:hover {
+	text-decoration-line: none;
+	color: #eaeaea;
+}
+
+.grid-examples {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 20px;
+}
+
+.grid-example {
+	cursor: pointer;
+}
+
+.grid-example img {
+	max-width: 35%;
+	height: auto;
+	display: block;
+}

@@ -1,0 +1,104 @@
+body {
+	background-color: aliceblue;
+}
+
+#game-container {
+	text-align: center;
+}
+
+#scoreboard {
+	font-size: 24px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+#result {
+	font-size: 18px;
+	margin-bottom: 20px;
+}
+
+#pcMove {
+	font-size: 18px;
+	margin-bottom: 20px;
+}
+
+.playerChoice {
+	padding: 10px 20px;
+	margin: 0 10px;
+	background-color: #3498db;
+	color: #fff;
+	cursor: pointer;
+	border: none;
+	border-radius: 5px;
+	font-size: 16px;
+	transition: background-color 0.3s;
+}
+
+.playerChoice:hover {
+	background-color: #2980b9;
+}
+
+#language {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	padding: 5px 10px;
+	background-color: #3498db;
+	color: #fff;
+	cursor: pointer;
+	border: none;
+	border-radius: 5px;
+	font-size: 14px;
+	transition: background-color 0.3s;
+}
+
+#languageBtn:hover {
+	background-color: #2980b9;
+}
+
+@keyframes flash {
+	0% {
+		color: inherit;
+	}
+	50% {
+		color: green;
+	}
+	100% {
+		color: inherit;
+	}
+}
+
+.flash-win {
+	animation: flash 1s infinite;
+	color: green;
+}
+
+.flash-lose {
+	animation: flash 1s infinite;
+	color: red;
+}
+
+#name-change-container {
+	top: 60px;
+	left: 1px;
+	padding: 5px 10px;
+	position: absolute;
+}
+#name-change {
+	background-color: #3498db;
+	color: #fff;
+	cursor: pointer;
+	border: none;
+	border-radius: 5px;
+	font-size: 14px;
+	transition: background-color 0.3s;
+}
+
+#name-change:hover {
+	background-color: #2980b9;
+}
+
+#notice {
+	display: none;
+	font-size: 14px;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="RPS.css" />
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<script src="RPS.js" defer></script>
+		<!-- Made solely for the development of the game -->
+		<title>Game</title>
+	</head>
+	<body>
+		<div id="game-container">
+			<div id="scoreboard">Scoreboard</div>
+			<div id="language">Eng</div>
+			<div id="name-change-container">
+				<input type="text" id="name-change-input" style="display: none" />
+				<button id="name-change">Change Name</button>
+				<p id="notice">Enter / Return</p>
+			</div>
+			<div id="result">Who won?</div>
+			<div id="pcMove">Computers move</div>
+			<div id="playerOptions">
+				<button id="rock" class="playerChoice">Rock</button>
+				<button id="paper" class="playerChoice">Paper</button>
+				<button id="scissors" class="playerChoice">Scissors</button>
+			</div>
+		</div>
+	</body>
+</html>
